@@ -4,3 +4,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/openlybuilt/backend.git
+[submodule "platform"]
+	path = platform
+	url = https://github.com/openlybuilt/platform.git
