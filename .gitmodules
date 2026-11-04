@@ -1,0 +1,6 @@
+[submodule "agents"]
+	path = agents
+	url = https://github.com/openlybuilt/agents.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/openlybuilt/backend.git
