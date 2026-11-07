@@ -9,7 +9,7 @@ Work in the user's local workspace and obtain the user's authorization before st
 Start the stack as described in the [main README](../README.md). The examples below use `curl`, `jq`, Node.js, and the backend's default loopback address:
 
 ```sh
-OPENLY_BACKEND=http://127.0.0.1:3000
+OPENLY_BACKEND=http://127.0.0.1:2120
 curl -fsS "$OPENLY_BACKEND/ready"
 curl -fsS "$OPENLY_BACKEND/provider-capabilities" | jq .
 ```

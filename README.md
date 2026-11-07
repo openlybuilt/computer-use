@@ -42,7 +42,7 @@ Create `backend/.env` with your database credentials and the generated values. R
 
 ```dotenv
 DATABASE_URL=postgresql://USER:PASSWORD@127.0.0.1:5432/openly
-AGENTS_URL=http://127.0.0.1:3100
+AGENTS_URL=http://127.0.0.1:2130
 AGENTS_API_TOKEN=REPLACE_WITH_FIRST_TOKEN
 AGENTS_CALLBACK_TOKEN=REPLACE_WITH_SECOND_TOKEN
 PLACEHOLDER_ENCRYPTION_KEY=REPLACE_WITH_BASE64_KEY
@@ -51,7 +51,7 @@ PLACEHOLDER_ENCRYPTION_KEY=REPLACE_WITH_BASE64_KEY
 Create `agents/.env`, using the same two tokens and your own model and provider credentials:
 
 ```dotenv
-BACKEND_URL=http://127.0.0.1:3000
+BACKEND_URL=http://127.0.0.1:2120
 AGENTS_API_TOKEN=REPLACE_WITH_FIRST_TOKEN
 AGENTS_CALLBACK_TOKEN=REPLACE_WITH_SECOND_TOKEN
 OPENAI_API_KEY=REPLACE_WITH_OPENAI_KEY
@@ -64,8 +64,8 @@ Alternatively or additionally, configure `DAYTONA_API_KEY` for Windows Computer;
 Create `platform/.env.local`:
 
 ```dotenv
-BACKEND_URL=http://127.0.0.1:3000
-UI_ORIGIN=http://127.0.0.1:3001
+BACKEND_URL=http://127.0.0.1:2120
+UI_ORIGIN=http://127.0.0.1:2110
 ```
 
 `UI_ORIGIN`, when set, must match the browser's exact origin. Do not commit these files. Preserve the placeholder encryption key across restarts; changing it prevents previously saved values from being decrypted.
@@ -91,10 +91,10 @@ node --env-file=.env dist/server.js
 ```sh
 cd platform
 pnpm install --frozen-lockfile
-pnpm dev --port 3001
+pnpm dev
 ```
 
-Open `http://127.0.0.1:3001`. The UI checks that the backend and agents are available. At least one VM provider must be configured for the services to report an available execution target, even though the guide's example recording does not start a VM.
+Open `http://127.0.0.1:2110`. The UI checks that the backend and agents are available. At least one VM provider must be configured for the services to report an available execution target, even though the guide's example recording does not start a VM.
 
 ## Learn more
 
