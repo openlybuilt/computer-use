@@ -1,9 +1,9 @@
 [submodule "agents"]
 	path = agents
-	url = https://github.com/openlybuilt/agents.git
+	url = https://github.com/openlybuilt/cua-agents.git
 [submodule "backend"]
 	path = backend
-	url = https://github.com/openlybuilt/backend.git
+	url = https://github.com/openlybuilt/cua-backend.git
 [submodule "platform"]
 	path = platform
-	url = https://github.com/openlybuilt/platform.git
+	url = https://github.com/openlybuilt/cua-platform.git
